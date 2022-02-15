@@ -2,7 +2,7 @@ package me.omich.carmanager;
 
 import java.util.Objects;
 
-public class Car {
+public abstract class Car {
 
     String name;
     int yearOfProduction;
@@ -51,12 +51,7 @@ public class Car {
         distanceOnService = 0;
     }
 
-    public boolean isReadyToService() {
-        if (distanceOnService > 10000) {
-            return true;
-        }
-        return false;
-    }
+    public abstract boolean isReadyToService();
 
 
     public int getDistance() {

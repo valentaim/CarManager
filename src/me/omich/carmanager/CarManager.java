@@ -5,7 +5,12 @@ public class CarManager {
 
         PassengerCar prius = new PassengerCar("Toyota primus", 2008, 15000, 1200, Color.GREEN);
         Bus renault = new Bus("Renault Logan", 2000, 9700, 1600, Color.WHITE);
-        Car renault2 = new Car("Renault Logan", 2000, 9700, 1600, Color.WHITE);
+        Car renault2 = new Car("Renault Logan", 2000, 9700, 1600, Color.WHITE) {
+            @Override
+            public boolean isReadyToService() {
+                return false;
+            }
+        };
 
         prius.addDistance(1000);
         prius.addDistance(2000);
