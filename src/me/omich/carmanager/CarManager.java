@@ -24,17 +24,18 @@ public class CarManager {
         System.out.println(renault2);
 
         System.out.println(prius.getDistanceOnService());
-
-        prius.service();
-
-        System.out.println("********************");
-        System.out.println(renault.equals(renault2));
-
-        System.out.println(prius);
-
-        System.out.println(prius.equals(renault2));
+        //
+        //        prius.service();
+        //
+        //        System.out.println("********************");
+        //        System.out.println(renault.equals(renault2));
+        //
+        //        System.out.println(prius);
+        //
+        //        System.out.println(prius.equals(renault2));
+        //        System.out.println(prius.isReadyToService());
+        //        System.out.println(renault.isReadyToService());
         System.out.println(prius.isReadyToService());
         System.out.println(renault.isReadyToService());
-
     }
 }
