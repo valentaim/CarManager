@@ -2,7 +2,7 @@ package me.omich.carmanager;
 
 import java.util.Objects;
 
-public abstract class Car {
+public abstract class Car implements Serviceable {
 
     String name;
     int yearOfProduction;
@@ -47,14 +47,13 @@ public abstract class Car {
         distanceOnService += additionalDistance;
     }
 
-    public int getDistance() {
-        return distance;
-    }
-
-    public abstract boolean isReadyToService();
-
     public void service() {
         distanceOnService = 0;
+    }
+
+
+    public int getDistance() {
+        return distance;
     }
 
     @Override
