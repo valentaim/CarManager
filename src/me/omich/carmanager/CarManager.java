@@ -3,8 +3,8 @@ package me.omich.carmanager;
 public class CarManager {
     public static void main(String[] args) throws Exception {
 
-        PassengerCar prius = new PassengerCar("Toyota primus", 2008, 15000, 1200, Color.GREEN);
-        Bus renault = new Bus("Renault Logan", 2000, 9700, 1600, Color.WHITE);
+        Car prius = new PassengerCar("Toyota primus", 2008, 15000, 1200, Color.GREEN);
+        Car renault = new Bus("Renault Logan", 2000, 9700, 1600, Color.WHITE);
         Car renault2 = new Car("Renault Logan", 2000, 9700, 1600, Color.WHITE) {
             @Override
             public boolean isReadyToService() {

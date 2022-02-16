@@ -47,15 +47,14 @@ public abstract class Car {
         distanceOnService += additionalDistance;
     }
 
-    public void service() {
-        distanceOnService = 0;
+    public int getDistance() {
+        return distance;
     }
 
     public abstract boolean isReadyToService();
 
-
-    public int getDistance() {
-        return distance;
+    public void service() {
+        distanceOnService = 0;
     }
 
     @Override
